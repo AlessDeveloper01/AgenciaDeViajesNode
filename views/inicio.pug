@@ -1,0 +1,33 @@
+extends ./layout/index
+
+block slider 
+    .slider
+        h1 Rio de Janeiro
+        em Aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        div.row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam excepturi voluptatum deleniti repellendus delectus sint iste quasi nostrum commodi? Facilis numquam quos quibusdam quas nam? Tenetur corporis voluptatem numquam odio.Esse voluptatum voluptas a quod architecto tempore fugit, fuga praesentium autem impedit sunt rerum obcaecati sint sapiente quaerat consequatur qui
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto laborum autem consequatur magni debitis deserunt voluptate libero distinctio fugit voluptatibus, obcaecati quibusdam numquam id enim? 
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Nosotros", class="img-fluid")
+
+        include ./layout/bloque_viajes
+
+    .descuento
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 de Diciembre del 2022 - 10 de Enero del 2023
+                        p.precio $ 2,000.00 dolares
+
+    .container
+        h2.mt-5.text-center Testimoniales
+        
+        include ./layout/bloque_testimoniales
